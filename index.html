@@ -406,14 +406,10 @@
         .project-card:hover .card-body {
             background: #f4f4f4;
         }
-        
-        /* Testimonials Section */
-        #testimonials {
-            height: 350px;
-        }
 
+        /* Testimonials Section */
         #testimonials h2 {
-            
+
             margin-bottom: 50px;
             position: relative;
             display: inline-block;
@@ -430,9 +426,10 @@
             border-radius: 2px;
         }
 
-        .testimonial-slider .slick-slide{
+        .testimonial-slider .slick-slide {
             padding: 0 25px;
         }
+
         .testimonial-slider .card {
             background: transparent;
             border: none;
@@ -450,6 +447,20 @@
         .testimonial-slider .card-text {
             font-style: italic;
             color: #333333;
+        }
+
+        .testimonial-slider .card-title {
+            i {
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                font-size: 26px;
+                text-align: center;
+                align-content: center;
+                background-color: black;
+                color: white;
+                margin-right: 10px;
+            }
         }
 
         /* Contact Section */
@@ -476,8 +487,6 @@
 
         /* Contact Form */
         #contact form .form-control {
-            border-radius: 15px;
-            padding: 10px 20px;
             border: 1px solid #ccc;
             transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
             background: #ffffff;
@@ -490,11 +499,10 @@
         }
 
         #contact form button {
-            border-radius: 15px;
-            padding: 10px 30px;
             transition: background var(--transition-speed), transform 0.3s, color var(--transition-speed);
 
         }
+
         /* Map */
         #map {
             border-radius: 15px;
@@ -799,7 +807,7 @@
                             <h5 class="card-title">Project Title 2</h5>
                             <p class="card-text">A brief description of the project. Highlight the technologies used and
                                 the purpose.</p>
-                                <a href="#" class="btn btn-outline-dark" target="_blank"><i
+                            <a href="#" class="btn btn-outline-dark" target="_blank"><i
                                     class="fas fa-external-link-alt me-2"></i>View Project</a>
                         </div>
                     </div>
@@ -812,7 +820,7 @@
                             <h5 class="card-title">Project Title 3</h5>
                             <p class="card-text">A brief description of the project. Highlight the technologies used and
                                 the purpose.</p>
-                                <a href="#" class="btn btn-outline-dark" target="_blank"><i
+                            <a href="#" class="btn btn-outline-dark" target="_blank"><i
                                     class="fas fa-external-link-alt me-2"></i>View Project</a>
                         </div>
                     </div>
@@ -824,7 +832,7 @@
                             <h5 class="card-title">Project Title 3</h5>
                             <p class="card-text">A brief description of the project. Highlight the technologies used and
                                 the purpose.</p>
-                                <a href="#" class="btn btn-outline-dark" target="_blank"><i
+                            <a href="#" class="btn btn-outline-dark" target="_blank"><i
                                     class="fas fa-external-link-alt me-2"></i>View Project</a>
                         </div>
                     </div>
@@ -836,7 +844,7 @@
                             <h5 class="card-title">Project Title 3</h5>
                             <p class="card-text">A brief description of the project. Highlight the technologies used and
                                 the purpose.</p>
-                                <a href="#" class="btn btn-outline-dark" target="_blank"><i
+                            <a href="#" class="btn btn-outline-dark" target="_blank"><i
                                     class="fas fa-external-link-alt me-2"></i>View Project</a>
                         </div>
                     </div>
@@ -848,7 +856,7 @@
                             <h5 class="card-title">Project Title 3</h5>
                             <p class="card-text">A brief description of the project. Highlight the technologies used and
                                 the purpose.</p>
-                                <a href="#" class="btn btn-outline-dark" target="_blank"><i
+                            <a href="#" class="btn btn-outline-dark" target="_blank"><i
                                     class="fas fa-external-link-alt me-2"></i>View Project</a>
                         </div>
                     </div>
@@ -889,6 +897,34 @@
                 </div>
                 <!-- Add more testimonials as needed -->
             </div>
+        </div>
+        <hr class="container">
+        <div class="container px-5 py-3 ">
+            <h4 class="pb-4">Comment</h4>
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label for="name" class="form-label">Name </label>
+                    <input type="text" class="form-control" id="name" placeholder="Example : Ahmad" required>
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="position" class="form-label">Position</label>
+                    <input type="text" class="form-control" id="position" placeholder="Example : Web Developer"
+                        required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label for="Comment" class="form-label">Comment</label>
+                    <textarea class="form-control" id="Comment" rows="4" placeholder="Your Comment..."
+                        required></textarea>
+                </div>
+                <div style="margin-top: 32px;" class="col-6">
+                    <button type="submit" class="btn btn-outline-dark w-100"><i
+                            class="fas fa-paper-plane me-2"></i>Submit</button>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -1010,7 +1046,7 @@
                 slidesToShow: 2,
                 adaptiveHeight: true,
                 arrows: false,
-                
+
             });
         });
     </script>
