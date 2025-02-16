@@ -409,8 +409,7 @@
         
         /* Testimonials Section */
         #testimonials {
-            padding: 80px 0;
-            background: #ffffff;
+            height: 350px;
         }
 
         #testimonials h2 {
@@ -430,8 +429,11 @@
             border-radius: 2px;
         }
 
+        .testimonial-slider .slick-slide{
+            padding: 0 25px;
+        }
         .testimonial-slider .card {
-            background: #ffffff;
+            background: transparent;
             border: none;
             border-radius: 15px;
             padding: 30px;
@@ -440,8 +442,8 @@
         }
 
         .testimonial-slider .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
         }
 
         .testimonial-slider .card-text {
@@ -870,48 +872,27 @@
             <h2 class="text-center mb-4">Testimonials</h2>
             <div class="testimonial-slider">
                 <!-- Testimonial 1 -->
-                <div>
+                <div class="py-5">
                     <div class="card p-4">
                         <p class="card-text">"Your work was exceptional and delivered on time. Highly recommended!"</p>
-                        <h5 class="card-title mt-3">Client Name 1</h5>
+                        <h5 class="card-title mt-3"><span><i class="fa fa-user"></i></span>Client Name 1</h5>
                         <p class="card-subtitle mb-2">CEO, Company Name</p>
-                        <div class="star-rating">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star-half-alt text-warning"></i>
-                        </div>
                     </div>
                 </div>
                 <!-- Testimonial 2 -->
-                <div>
+                <div class="py-5">
                     <div class="card p-4">
                         <p class="card-text">"Amazing skills and great communication throughout the project."</p>
-                        <h5 class="card-title mt-3">Client Name 2</h5>
+                        <h5 class="card-title mt-3"> <span><i class="fa fa-user"></i></span>Client Name 2</h5>
                         <p class="card-subtitle mb-2">Manager, Company Name</p>
-                        <div class="star-rating">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="far fa-star text-warning"></i>
-                        </div>
                     </div>
                 </div>
                 <!-- Testimonial 3 -->
-                <div>
+                <div class="py-5">
                     <div class="card p-4">
                         <p class="card-text">"Delivered beyond our expectations. Will work with again!"</p>
-                        <h5 class="card-title mt-3">Client Name 3</h5>
+                        <h5 class="card-title mt-3"><span><i class="fa fa-user"></i></span>Client Name 3</h5>
                         <p class="card-subtitle mb-2">Director, Company Name</p>
-                        <div class="star-rating">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
                     </div>
                 </div>
                 <!-- Add more testimonials as needed -->
@@ -1029,14 +1010,15 @@
         // Initialize Slick Carousel for Testimonials
         $(document).ready(function () {
             $('.testimonial-slider').slick({
-                dots: true,
+                dots: false,
                 infinite: true,
-                speed: 600,
+                speed: 1000,
                 autoplay: true,
                 autoplaySpeed: 4000,
-                slidesToShow: 1,
+                slidesToShow: 2,
                 adaptiveHeight: true,
-                arrows: false
+                arrows: false,
+                
             });
         });
     </script>
